@@ -307,19 +307,26 @@ img {
 }
 
 /* ===== WORK =====*/
-.work__container {
-  row-gap: 2rem;
+.work {
+    padding: 50px 0;
+    background-color: #2b2b2b; /* Dark background for dark theme */
+    color: #fff; /* White text */
 }
-.work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
-  overflow: hidden;
+
+.work__item {
+    margin-bottom: 40px;
 }
-.work__img img {
-  transition: 1s;
+
+.work__subtitle {
+    font-size: 1.5rem;
+    color: #f39c12; /* Gold for titles */
+    margin-bottom: 10px;
 }
-.work__img img:hover {
-  transform: scale(1.1);
+
+.work__item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #ddd; /* Lighter text for the list */
 }
 
 /* ===== CONTACT =====*/
