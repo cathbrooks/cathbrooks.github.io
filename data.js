@@ -218,28 +218,26 @@ export const experience = [
 
 export const education = [
   {
-    title: "B.Tech. in Computer Science and Engineering",
-    duration: "2016 - 2020",
-    subtitle: "National Institute of Technology, Warangal",
+    title: "B.S. in Mathematics and Computer Science",
+    duration: "Graduated in Jan. 2025",
+    subtitle: "Tulane University",
     details: [],
     tags: [
-      "Data Structures & Algorithms",
-      "Operating Systems",
-      "Database Management System",
-      "Computer Networks",
-      "Compiler Designing",
-      "Cloud Computing",
+      "Data Scienec",
+      "Machine Learning",
+      "Cyber Security",
+      "Computer Systems & Networks",
     ],
     icon: "graduation-cap",
   },
-  {
-    title: "Class 12th in Science and Mathematics",
-    duration: "",
-    subtitle: "Board of Secondary Education, Rajasthan",
-    details: [],
-    tags: ["Physics", "Chemistry", "Mathematics"],
-    icon: "book",
-  },
+  // {
+  //   title: "Class 12th in Science and Mathematics",
+  //   duration: "",
+  //   subtitle: "Board of Secondary Education, Rajasthan",
+  //   details: [],
+  //   tags: ["Physics", "Chemistry", "Mathematics"],
+  //   icon: "book",
+  // },
 ];
 
 export const footer = [
