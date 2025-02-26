@@ -1,6 +1,6 @@
 export const bio = [
-  "Hello! I'm Vinay Somawat, an experienced Frontend Software Engineer with a proven ability to upgrade applications, optimize performance, and deliver innovative solutions.",
-  "I am passionate about using my technical skills to drive impactful contributions in challenging projects.",
+  "Hello! I'm Catherine Brooks, a recent graduate in mathematics and computer science from Tulane University.",
+  "I am passionate about AI, data science, and leveraging large language models to solve complex problems. Experienced in internships focusing on AI, data privacy, and community engagement with a keen interest in scientific computing and bias mitigation in AI models.",
   "Thanks for visiting!",
 ];
 
@@ -278,29 +278,29 @@ export const footer = [
   {
     label: "Links",
     data: [
-    //   {
-    //     text: "Linkedin",
-    //     link: "https://www.linkedin.com/in/vinaysomawat/",
-    //   },
+      {
+        text: "Linkedin",
+        link: "https://www.linkedin.com/in/brooks-catherine/",
+      },
     //   {
     //     text: "Twitter",
     //     link: "https://twitter.com/thesigmakid",
     //   },
-      {
-        text: "Buy me a coffee",
-        link: "https://www.buymeacoffee.com/r194dME8y",
-      },
-      {
-        text: "Github/vinaysomawat.github.io",
-        link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
-      },
+      // {
+      //   text: "Buy me a coffee",
+      //   link: "https://www.buymeacoffee.com/r194dME8y",
+      // },
+      // {
+      //   text: "Github/vinaysomawat.github.io",
+      //   link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
+      // },
     ],
   },
   {
     label: "copyright-text",
     data: [
-      "Made with &hearts; by Vinay Somawat.",
-      "&copy; No Copyrights. Feel free to use this template.",
+      // "Made with &hearts; by Vinay Somawat.",
+      // "&copy; No Copyrights. Feel free to use this template.",
     ],
   },
 ];
