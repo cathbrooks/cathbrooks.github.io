@@ -7,49 +7,13 @@ import {
     footer,
   } from "./data.js";
 
+
 import { URLs } from './user-data/urls.js';
   
-  const { webProjects, softwareProjects, androidProjects, freelanceProjects } =
+  const { webProjects } =
     projects;
   const { medium, gitConnected } = URLs;
   
-  /**
-   * Fetches blogs from Medium profile.
-   *
-   * @function
-   * @async
-   *
-   * @throws {Error} If there is any error in fetching the blogs from Medium profile.
-   *
-   * @returns {void}
-   */
-  
-  async function fetchBlogsFromMedium(url) {
-    try {
-      const response = await fetch(url);
-      const { items } = await response.json();
-      populateBlogs(items, "blogs");
-    } catch (error) {
-      throw new Error(
-        `Error in fetching the blogs from Medium profile: ${error}`
-      );
-    }
-  }
-
-
-  async function fetchGitConnectedData(url) {
-    try {
-      const response = await fetch(url);
-      console.log(response);
-      const { basics } = await response.json();
-      // populateBlogs(items, "blogs");
-      mapBasicResponse(basics);
-    } catch (error) {
-      throw new Error(
-        `Error in fetching the blogs from git connected: ${error}`
-      );
-    }
-  }
 
   function mapBasicResponse(basics) {
     const {
@@ -62,7 +26,6 @@ import { URLs } from './user-data/urls.js';
       summary,
       profiles,
       headline,
-      blog,
       yearsOfExperience,
       username,
       locationAsString,
@@ -213,77 +176,6 @@ import { URLs } from './user-data/urls.js';
     }
   }
   
-  /**
-   * Creates and populates a list of blog posts with specified properties
-   *
-   * @function
-   *
-   * @param {Array} items - An array of objects, each representing a blog post
-   * @param {string} id - The ID of the parent element where the list of posts will be appended
-   *
-   * @returns {undefined}
-   */
-  
-  function populateBlogs(items, id) {
-    const projectdesign = document.getElementById(id);
-    const count = 3;
-  
-    for (let i = 0; i < count; i++) {
-      const h4 = document.createElement("h4");
-      h4.className = "project-heading";
-      h4.innerHTML = items[i].title;
-  
-      const a = document.createElement("a");
-      a.href = items[i].link;
-      a.target = "_blank";
-      a.append(h4);
-
-      const pubDateEle = document.createElement('p');
-      pubDateEle.className = 'publish-date';
-      pubDateEle.innerHTML = getBlogDate(items[i].pubDate);
-      a.append(pubDateEle);
-  
-      const divResumeContentRight = document.createElement("div");
-      divResumeContentRight.className = "resume-content";
-      divResumeContentRight.id = "right-div";
-  
-      const p = document.createElement("p");
-      p.className = "project-description";
-      const html = items[i].content;
-      const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
-      p.innerHTML = doc;
-  
-      const divSpan = document.createElement("div");
-      for (const category of items[i].categories) {
-        const span = document.createElement("span");
-        span.className = "badge badge-secondary";
-        span.innerHTML = category;
-        divSpan.append(span);
-      }
-  
-      const divSubHeading = document.createElement("div");
-      divSubHeading.className = "sub-heading";
-      divSubHeading.append(p, divSpan);
-      divResumeContentRight.append(divSubHeading);
-  
-      const divResumeItem = document.createElement("div");
-      divResumeItem.className = "resume-item";
-      divResumeItem.append(divResumeContentRight);
-      a.append(divResumeItem);
-  
-      const divProjectCard = document.createElement("div");
-      divProjectCard.className = "project-card";
-      divProjectCard.append(a);
-  
-      const li = document.createElement("li");
-      li.append(divProjectCard);
-      projectdesign.append(li);
-  
-      if (i !== count - 1) {
-        projectdesign.append(document.createElement("hr"));
-      }
-    }
-  }
   
   /**
    * Populate the HTML timeline with items.
@@ -436,50 +328,13 @@ import { URLs } from './user-data/urls.js';
     item.className = className;
     return item;
   }
-
-  function getBlogDate(publishDate) {
-    const elapsed = Date.now() - Date.parse(publishDate);
-  
-    // Time conversions in milliseconds
-    const msPerSecond = 1000;
-    const msPerMinute = msPerSecond * 60;
-    const msPerHour = msPerMinute * 60;
-    const msPerDay = msPerHour * 24;
-    const msPerMonth = msPerDay * 30;
-    const msPerYear = msPerDay * 365;
-  
-    if (elapsed < msPerMinute) {
-      const seconds = Math.floor(elapsed / msPerSecond);
-      return `${seconds} seconds ago`;
-    } else if (elapsed < msPerHour) {
-      const minutes = Math.floor(elapsed / msPerMinute);
-      return `${minutes} minutes ago`;
-    } else if (elapsed < msPerDay) {
-      const hours = Math.floor(elapsed / msPerHour);
-      return `${hours} hours ago`;
-    } else if (elapsed < msPerMonth) {
-      const days = Math.floor(elapsed / msPerDay);
-      return (days == 1) ? `${days} day ago` : `${days} days ago`;
-    } else if (elapsed < msPerYear) {
-      const months = Math.floor(elapsed / msPerMonth);
-      return (months == 1) ? `${months} month ago` : `${months} months ago`;
-    } else {
-      const years = Math.floor(elapsed / msPerYear);
-      return (years == 1) ? `${years} year ago` : `${years} years ago`;
-    }
-  }
   
   populateBio(bio, "bio");
   
   populateSkills(skills, "skills");
   
-  fetchBlogsFromMedium(medium);
-  fetchGitConnectedData(gitConnected);
   
   populateProjects(webProjects, "web-projects");
-  populateProjects(softwareProjects, "software-projects");
-  populateProjects(androidProjects, "android-projects");
-  populateProjects(freelanceProjects, "freelance-projects");
   
   populateExp_Edu(experience, "experience");
   populateExp_Edu(education, "education");
