@@ -56,7 +56,7 @@ export const projects = {
       image: "images/expoPoster.png",
       summary:
         "Browser based editor to build and download Resumes in a customizable templates.",
-      preview: "https://catherinebrooks.github.io/llmProject.html",
+      preview: "https://catherinebrooks.github.io/llmProject/index.html",
       techStack: ["HTML", "Bootstrap", "JavaScript"],
     },
     {
