@@ -56,23 +56,31 @@ export const projects = {
       image: "images/expoPoster.png",
       summary:
         "Browser based editor to build and download Resumes in a customizable templates.",
-      preview: "https://catherinebrooks.github.io/llmProject/index.html",
+      preview: "https://cathbrooks.github.io/catherinebrooks.github.io/llmProject",
       techStack: ["HTML", "Bootstrap", "JavaScript"],
     },
     {
       projectName: "PINNS",
-      image: "images/resume-builder.png",
+      image: "images/expoPoster.png",
       summary:
         "Browser based editor to build and download Resumes in a customizable templates.",
-      preview: "https://cathbrooks.github.io/Resume-Builder",
+      preview: "https://cathbrooks.github.io/catherinebrooks.github.io/PINNSProject",
       techStack: ["HTML", "Bootstrap", "JavaScript"],
     },
     {
-      projectName: "Savings Calculator",
-      image: "images/resume-builder.png",
+      projectName: "Return on Investment Estimator",
+      image: "images/expoPoster.png",
       summary:
         "Browser based editor to build and download Resumes in a customizable templates.",
-      preview: "https://vinaysomawat.github.io/Resume-Builder",
+      preview: "https://www.energispot.com/savings-calculator",
+      techStack: ["HTML", "Bootstrap", "JavaScript"],
+    },
+    {
+      projectName: "Data Science",
+      image: "images/expoPoster.png",
+      summary:
+        "Browser based editor to build and download Resumes in a customizable templates.",
+      preview: "https://cathbrooks.github.io/datascienceproject.github.io/",
       techStack: ["HTML", "Bootstrap", "JavaScript"],
     },
   ],

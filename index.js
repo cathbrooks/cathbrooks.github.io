@@ -133,6 +133,7 @@ import { URLs } from './user-data/urls.js';
   
     let divSubHeading = document.createElement("div");
     divSubHeading.className = "sub-heading";
+    divSubHeading.append(h4);
     divSubHeading.append(p);
     divSubHeading.append(divSpan);
     divResumeContentRight.append(divSubHeading);
