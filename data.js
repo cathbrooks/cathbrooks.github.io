@@ -1,6 +1,6 @@
 export const bio = [
   "Hello! I'm Catherine Brooks, a recent graduate in mathematics and computer science from Tulane University.",
-  "I am passionate about AI, data science, and leveraging large language models to solve complex problems. Experienced in internships focusing on AI, data privacy, and community engagement with a keen interest in scientific computing and bias mitigation in AI models.",
+  "I am passionate about AI, data science, and programming in general. I'm constantly looking to gain experience in software development and widen my knowledge of how different systems can benefit businesses. Take a look at my projects where I work with Large Language Models, Neural Networks, interactive web features, and data science.",
   "Thanks for visiting!",
 ];
 
@@ -57,7 +57,7 @@ export const projects = {
       image: "images/expoPoster.png",
       summary:
         "This capstone improved Sawt, a civic tool for the New Orleans community built using large language model with a Retrieval-Augmented Generation (RAG) pipeline. We created a feedback system with React, Supabase, and Google Cloud, and used a framework called DeepEval to compare human and LLM-based performance ratings, which is displayed on the SAWT website. Our work revealed patterns in model bias and accuracy, informing improvements for transparency and trust in generative AI.",
-      preview: "https://cathbrooks.github.io/catherinebrooks.github.io/llmProject",
+      preview: "https://cathbrooks.github.io/llmProject",
       techStack: ["Retrieval-Augmented Generation (RAG)", "Large Language Models (LLMs)", "React.js", "Database Organization"],
     },
     {
@@ -65,7 +65,7 @@ export const projects = {
       image: "images/NN.png",
       summary:
         "I chose this topic for my mathematics capstone because of my interest in scientific computing and the math behind neural networks. I evaluated two computational methods for solving partial differential equations (PDEs): finite difference methods, and Physics-Informed Neural Networks (PINNs).",
-      preview: "https://cathbrooks.github.io/catherinebrooks.github.io/PINNSProject",
+      preview: "https://cathbrooks.github.io/PINNSProject",
       techStack: ["Scientific Computing", "Neural Networks", "PINNS", "JAX"],
     },
     {
