@@ -7,33 +7,33 @@ export const bio = [
 export const skills = [
   {
     title: "Languages",
-    skillName: "Python, Java, C++, JavaScript, Swift",
+    skillName: "Python, Java, C++, JavaScript",
     color: "1",
-    percentage: "80",
+    percentage: "100",
   },
   {
     title: "Frameworks/Libraries",
     skillName: "React.js, Django, PyTorch, scikit-learn, numPy, JAX",
     color: "6",
-    percentage: "70",
+    percentage: "100",
   },
   {
     title: "Design",
     skillName: "HTML, CSS, Wix",
     color: "4",
-    percentage: "70",
+    percentage: "100",
   },
   {
     title: "Version Control",
     skillName: "GitHub, Git",
     color: "7",
-    percentage: "70",
+    percentage: "100",
   },
   {
     title: "Tools",
-    skillName: "Debugging, VS Code, Jupyter Notebook, Chrome DevTools, Matplotlib, MatLab",
+    skillName: "Debugging, VS Code, Jupyter Notebook, Matplotlib, MatLab",
     color: "3",
-    percentage: "80",
+    percentage: "100",
   },
 //   {
 //     title: "Analytics",
@@ -52,36 +52,37 @@ export const skills = [
 export const projects = {
   webProjects: [
     {
-      projectName: "Large Language Model Refinement",
+      //needs work
+      projectName: "Large Language Model Evaluation",
       image: "images/expoPoster.png",
       summary:
-        "Browser based editor to build and download Resumes in a customizable templates.",
+        "This capstone improved Sawt, a civic tool for the New Orleans community built using large language model with a Retrieval-Augmented Generation (RAG) pipeline. We created a feedback system with React, Supabase, and Google Cloud, and used a framework called DeepEval to compare human and LLM-based performance ratings, which is displayed on the SAWT website. Our work revealed patterns in model bias and accuracy, informing improvements for transparency and trust in generative AI.",
       preview: "https://cathbrooks.github.io/catherinebrooks.github.io/llmProject",
-      techStack: ["HTML", "Bootstrap", "JavaScript"],
+      techStack: ["Retrieval-Augmented Generation (RAG)", "Large Language Models (LLMs)", "React.js", "Database Organization"],
     },
     {
-      projectName: "PINNS",
-      image: "images/expoPoster.png",
+      projectName: "Physics-Informed Neural Networks (PINNs) Academic Essay",
+      image: "images/NN.png",
       summary:
-        "Browser based editor to build and download Resumes in a customizable templates.",
+        "I chose this topic for my mathematics capstone because of my interest in scientific computing and the math behind neural networks. I evaluated two computational methods for solving partial differential equations (PDEs): finite difference methods, and Physics-Informed Neural Networks (PINNs).",
       preview: "https://cathbrooks.github.io/catherinebrooks.github.io/PINNSProject",
-      techStack: ["HTML", "Bootstrap", "JavaScript"],
+      techStack: ["Scientific Computing", "Neural Networks", "PINNS", "JAX"],
     },
     {
       projectName: "Return on Investment Estimator",
-      image: "images/expoPoster.png",
+      image: "images/ROICalc.png",
       summary:
-        "Browser based editor to build and download Resumes in a customizable templates.",
+        "I designed and coded this interactive ROI calculator for EnergiSpot’s website to help customers estimate potential returns from investing in the company's EV charging stations. Through this project, I strengthened my skills in front-end development, JavaScript, and user-centered design to model real-world financial scenarios.",
       preview: "https://www.energispot.com/savings-calculator",
-      techStack: ["HTML", "Bootstrap", "JavaScript"],
+      techStack: ["HTML", "Wix", "JavaScript", "Web Design"],
     },
     {
-      projectName: "Data Science",
-      image: "images/expoPoster.png",
+      projectName: "Data Science Project: ",
+      image: "images/DataScience.png",
       summary:
-        "Browser based editor to build and download Resumes in a customizable templates.",
+        "This project required extensive data sourcing and data cleaning, including merging multiple datasets, handling missing values, and engineering new features. We used Pandas to group, normalize, and reshape the data, and converted percentage features into model-ready formats. After preparing the multiple datasets, we built and evaluated logistic regression models to classify data. The model's performance was assessed using cross-validation, accuracy scores, and confusion matrices, with visualizations created in Seaborn and Matplotlib.",
       preview: "https://cathbrooks.github.io/datascienceproject.github.io/",
-      techStack: ["HTML", "Bootstrap", "JavaScript"],
+      techStack: ["Machine Learning", "Data Cleaning", "Data Sourcing", "Data Modeling", "Pandas", "Matplotlib", "Seaborn", ]
     },
   ],
 };
@@ -123,13 +124,13 @@ export const experience = [
     icon: "qrcode", //change
   },
   {
-    //needs work
     title: "Steamboat Ski Resort",
     duration: "November 2021 - December 2022",
     subtitle: "Server, Retail",
     details: [
-      `Gained expertise in data privacy and AI blinding technology.`,
-      `Gained expertise in data privacy and AI blinding technology.`,
+      `Selected as 1 of the 40 individuals out of 833 employees to receive a raise in acknowledgement of exceptional and devoted work.`,
+      `Provided exceptional service at fine dining establishments, honing communication skills with diverse clientele.`,
+      `Held multiple retail positions within the Steamboat Ski Resort at one time, fostering teamwork and problem-solving abilities across multiple teams.`,
     ],
     tags: ["Customer Service", "Retail Operations", "POS Systems", "Sales", "Teamwork", "Hospitality"],
     icon: "group", 
@@ -139,37 +140,54 @@ export const experience = [
 export const education = [
   {
     title: "B.S. in Mathematics and Computer Science",
-    duration: "Graduated in Jan. 2025",
+    duration: "Graduated in Feb. 2025",
     subtitle: "Tulane University",
     details: [],
-    tags: [                     //needs work, maybe add diff section for coursework
+    tags: [             
       "Data Science",
       "Machine Learning",
       "Cyber Security",
       "Computer Systems & Networks",
+      "Ordinary Differential Equations",
+      "Scientific Computing",
+      "Linear Algebra",
+      "Real Analysis"
+    ],
+    icon: "graduation-cap",
+  },
+  {
+    title: "Study Abroad in Tokyo",
+    duration: "Sep 2024 - Feb 2025",
+    subtitle: "Sophia University",
+    details: [],
+    tags: [               
+      "Data Science",
+      "Machine Learning",
+      "Computer Studies",
+      "Japanese Language",
     ],
     icon: "graduation-cap",
   },
 ];
 
 export const footer = [
-//   {
-//     label: "Dev Profiles",
-//     data: [
-//       {
-//         text: "Stackoverflow",
-//         link: "https://stackoverflow.com/users/8461233/vinay-somawat",
-//       },
-//       {
-//         text: "GitHub",
-//         link: "https://github.com/vinaysomawat",
-//       },
-//       {
-//         text: "LeetCode",
-//         link: "https://leetcode.com/somawatvinay/",
-//       },
-//     ],
-//   },
+  // {
+  //   label: "Dev Profiles",
+  //   data: [
+      // {
+      //   text: "Stackoverflow",
+      //   link: "https://stackoverflow.com/users/8461233/vinay-somawat",
+      // },
+      // {
+      //   text: "GitHub",
+      //   link: "https://github.com/cathbrooks",
+      // },
+      // {
+      //   text: "LeetCode",
+      //   link: "https://leetcode.com/somawatvinay/",
+      // },
+    // ],
+  // },
 //   {
 //     label: "Resources",
 //     data: [
@@ -193,6 +211,10 @@ export const footer = [
       {
         text: "Linkedin",
         link: "https://www.linkedin.com/in/brooks-catherine/",
+      },
+      {
+        text: "GitHub",
+        link: "https://github.com/cathbrooks",
       },
     //   {
     //     text: "Twitter",
