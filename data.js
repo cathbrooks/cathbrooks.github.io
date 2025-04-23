@@ -73,7 +73,7 @@ export const projects = {
       image: "images/ROICalc.png",
       summary:
         "I designed and coded this interactive ROI calculator for EnergiSpot’s website to help customers estimate potential returns from investing in the company's EV charging stations. Through this project, I strengthened my skills in front-end development, JavaScript, and user-centered design to model real-world financial scenarios.",
-      preview: "https://www.energispot.com/savings-calculator",
+      preview: "https://www.energispot.com/roi-estimator",
       techStack: ["HTML", "Wix", "JavaScript", "Web Design"],
     },
     {
@@ -156,7 +156,7 @@ export const education = [
     icon: "graduation-cap",
   },
   {
-    title: "Study Abroad in Tokyo",
+    title: "Study in Tokyo",
     duration: "Sep 2024 - Feb 2025",
     subtitle: "Sophia University",
     details: [],
