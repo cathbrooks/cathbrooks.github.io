@@ -77,7 +77,14 @@ export const projects = {
       techStack: ["HTML", "Wix", "JavaScript", "Web Design"],
     },
     {
-      projectName: "Data Science Project: ",
+      projectName: "SAWT LLM Feedback Tool",
+      image: "images/SAWT.png",
+      summary:"",
+      preview: "https://www.sawt.us/feedback",
+      techStack: ["LLM", "Full Stack Development", "Web Design", "JavaScript", "React"]
+    },
+    {
+      projectName: "Data Science Project",
       image: "images/DataScience.png",
       summary:
         "This project required extensive data sourcing and data cleaning, including merging multiple datasets, handling missing values, and engineering new features. We used Pandas to group, normalize, and reshape the data, and converted percentage features into model-ready formats. After preparing the multiple datasets, we built and evaluated logistic regression models to classify data. The model's performance was assessed using cross-validation, accuracy scores, and confusion matrices, with visualizations created in Seaborn and Matplotlib.",
