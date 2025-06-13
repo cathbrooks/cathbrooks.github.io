@@ -79,7 +79,7 @@ export const projects = {
     {
       projectName: "SAWT LLM Feedback Tool",
       image: "images/SAWT.png",
-      summary:"",
+      summary:"I worked with a team to design this feedback tool in node.js and react to help with the refinement of the SAWT LLM chatbot. It runs the LLM through the backend, and connects to an organized Supabase database where the data can then be downloaded and evaluated. This tool is accessed through a page on Sawt's main website.",
       preview: "https://www.sawt.us/feedback",
       techStack: ["LLM", "Full Stack Development", "Web Design", "JavaScript", "React"]
     },
