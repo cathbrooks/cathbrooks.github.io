@@ -56,15 +56,15 @@ export const projects = {
       projectName: "Large Language Model Evaluation",
       image: "images/expoPoster.png",
       summary:
-        "This project taught me database and workflow management with a team, along with many different softwares and systems, such as React and Supabase. We improved Sawt, a civic tool for the New Orleans community built using large language model with a Retrieval-Augmented Generation (RAG) pipeline. We created a feedback system with React, Supabase, and Google Cloud, and used a framework called DeepEval to compare human and LLM-based performance ratings, which is displayed on the SAWT website. Our work revealed patterns in model bias and accuracy, informing improvements for transparency and trust in generative AI.",
+        "We improved Sawt, a civic tool for the New Orleans community built using large language model with a Retrieval-Augmented Generation (RAG) pipeline. We created a feedback system with React, node.js, Supabase, and Google Cloud, and used a framework called DeepEval to compare human and LLM-based performance ratings, which is displayed on the SAWT website. Our work revealed patterns in model bias and accuracy, informing improvements for transparency and trust in generative AI.",
       preview: "https://cathbrooks.github.io/llmProject",
-      techStack: ["Retrieval-Augmented Generation (RAG)", "Large Language Models (LLMs)", "React.js", "Database Organization"],
+      techStack: ["React", "Node.js", "Retrieval-Augmented Generation (RAG)", "Large Language Models (LLMs)", "Database Organization"],
     },
     {
       projectName: "Physics-Informed Neural Networks (PINNs) Academic Essay",
       image: "images/NN.png",
       summary:
-        "I chose this topic for my mathematics capstone because of my interest in scientific computing and the math behind neural networks. I evaluated two computational methods for solving partial differential equations (PDEs): finite difference methods, and Physics-Informed Neural Networks (PINNs). This required coding my own neural networks and PINNs using python and utilizing JAX.",
+        "I evaluated two computational methods for solving partial differential equations (PDEs): finite difference methods, and Physics-Informed Neural Networks (PINNs). This required coding my own neural networks and PINNs using python and utilizing JAX.",
       preview: "https://cathbrooks.github.io/PINNSProject",
       techStack: ["Scientific Computing", "Neural Networks", "PINNS", "JAX"],
     },
