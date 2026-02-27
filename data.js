@@ -1,6 +1,6 @@
 export const bio = [
-  "Hello! I'm Catherine Brooks, a recent graduate in mathematics and computer science from Tulane University.",
-  "I am passionate about AI, data science, and programming in general. I'm constantly looking to gain experience in software development and widen my knowledge of how different systems can benefit businesses. Take a look at my projects where I work with Large Language Models, Neural Networks, interactive web features, and data science.",
+  "Hello! I'm Catherine Brooks, a graduate in mathematics and computer science from Tulane University.",
+  "I am passionate about AI and data science. I'm constantly looking to gain experience in software development and widen my knowledge of how different systems can benefit businesses. Take a look at my projects where I work with Large Language Models, Neural Networks, interactive web features, and data science.",
   "Thanks for visiting!",
 ];
 
